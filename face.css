@@ -1,0 +1,171 @@
+.main {
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://opengameart.org/sites/default/files/oga-textures/tileable8e.png');
+
+}
+
+/* Navigation Bar Styles */
+
+.directory {
+
+    float: inline-start;
+    width: min-content;
+    height: min-content;
+    background-color: #291546;
+    border: 1px solid #285454;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.dButton {
+
+    background-color: #003049;
+    color: #e3d5ca;
+    cursor: pointer;
+    border: 1px solid #e3d5ca;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 125px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.dAction {
+
+  background-color: #003049;
+  color: #e3d5ca;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  z-index:1;
+  margin-top: 0.5rem;
+
+}
+
+a.dAction {
+    text-decoration: none;
+    display: block;
+}
+
+/* Collection Styles */
+
+.collection {
+    width: min-content;
+    height: auto;
+    color: #e3f5f1;
+    cursor: pointer;
+    padding: 5px; 
+}
+
+.coreC .collection:nth-child(1) { background-color: #3d1420;  border: 1px solid #ffffff;}  /* Core */
+.coreC .collection:nth-child(2) { background-color: #632240; border: 1px solid #ffffff;}  /* Maps & Vehicles */
+.coreC .collection:nth-child(3) { background-color: #632240; border: 1px solid #ffffff;}  /* True Music */
+.themeC .collection:nth-child(1) { background-color: #070c1d; border: 1px solid #000000;}  /* S.T.A.L.K.E.R. */
+.themeC .collection:nth-child(2) { background-color: #9f3c91; border: 1px solid #ffffff;}  /* Playhouse */
+.themeC .collection:nth-child(3) { background-color: #e2b570; border: 1px solid #000000;}  /* We Are Legend */
+
+a.collection {
+    text-decoration: none;
+    display: block;
+}
+
+.coreC {
+    width: min-content;
+    background-color: #291546;
+    color: #e3f5f1;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.themeC {
+    width: min-content;
+    background-color: #291546;
+    color: #e3f5f1;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.cRow {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cRow .collection {
+    margin-bottom:0;
+}
+
+/* Info Box Styles */
+
+.todoList {
+    width: 90%;
+    background-color: #446374;
+    border: 1px solid #e3f5f1;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+#defaultInfoBox {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #291546;
+    color: #e3d5ca;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 9998;
+    box-shadow: 0 2px 16px #0008;
+}
+#defaultInfoBox {
+    display: block;
+}
+
+#infoBox {
+    display: none;
+    position:fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #003049;
+    color: #e3d5ca;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+#infoClose {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+.wAvatar {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.summaryLabel {
+    font-size: 20px;
+    color: #e3d5ca;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#infoContent {
+    font-size: 18px;
+    color: #e3d5ca;
+    font-family:'Times New Roman', Times, serif
+}
